@@ -18,7 +18,7 @@ describe('Multi Table', function() {
 	})
 	
 	it("will throw error if you don't pass in a number", function(){
-		expect(multiTable("banana")).toThrow(new Error("Please input a number"));
+		expect(function(){multiTable("banana");}).toThrow(new Error("Please input a number"));
 	})
 
 })
